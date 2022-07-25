@@ -26,7 +26,7 @@
             <!-- RD Navbar Brand -->
             <div class="rd-navbar-brand">
               <a href="index.html">
-                <span class="brand-name text-white text-bold">Ẩm thực <span>Ship</span></span>
+                <span class="brand-name text-white text-bold">Ăn uống <span>Ship</span></span>
                 <span class="brand-slogan text-thin">Món quà ngon</span>
               </a>
             </div>
@@ -36,7 +36,7 @@
           <div class="rd-navbar-nav-wrap">
             <!-- RD Navbar Search -->
             <div class="rd-navbar-search">
-              <form class="rd-navbar-search-form" action="" method="GET">
+              <form class="rd-navbar-search-form" action="search.php" method="GET">
                 <label class="rd-navbar-search-form-input">
                   <input type="text" name="s" placeholder="Search.." autocomplete="off"/>
                 </label>
@@ -97,7 +97,7 @@
                     </ul>
                   </li>
                   <li>
-                    <a href="#">Nhận viên</a>
+                    <a href="#">Nhân viên</a>
                   </li>
                 </ul>
                 <!-- END RD Navbar Dropdown -->
@@ -109,7 +109,7 @@
                 <a href="gallery.html">Ảnh</a>
               </li>
               <li>
-                <a routerLink="/contact">Liên hệ</a>
+                <a href="contact.html">Liên hệ</a>
               </li>
             </ul>
             <!-- END RD Navbar Nav -->
@@ -182,143 +182,88 @@
       </div>
     </section>
     <!-- END logo + Search -->
-    <!-- Gallery -->
-    <section>
-      <div class="row row-no-gutter">
-        <div class="col-md-4 col-sm-4">
-          <div class="thumb wow fadeInLeft">
-            <a href="#">
-              <img src="assets/images/page-2_img01.jpg" width="684" height="598" alt="Image 1"/>
-              <div class="thumb__overlay"></div>
-              <div class="thumb__titel">
-                <div>
-                  <span class="restaurant-icon-17"></span>
-                  <h3>Nhóm<br>
-                    đặt hàng
-                  </h3>
-                </div>
-
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-4 wow fadeIn">
-          <div class="thumb">
-            <a href="#">
-              <img src="assets/images/page-2_img02.jpg" width="684" height="598" alt="Image 1"/>
-              <div class="thumb__overlay"> </div>
-              <div class="thumb__titel">
-                <div>
-                  <span class="restaurant-icon-29"></span>
-                  <h3>Quà tặng<br>
-                    Chứng chỉ
-                  </h3>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-4">
-          <div class="thumb wow fadeInRight">
-            <a href="#">
-              <img src="assets/images/page-2_img03.jpg" width="684" height="598" alt="Image 1"/>
-              <div class="thumb__overlay"></div>
-              <div class="thumb__titel">
-                <div>
-                  <span class="restaurant-icon-35"></span>
-                  <h3>
-                    Giá<br>
-                    Giảm giá
-                  </h3>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- END Gallery -->
-    <!-- Welcome to our site -->
-    <section class="well-sm-2">
+    <!-- RD Google Map -->
+    <div class="rd-google-map">
+      <div id="google-map" class="rd-google-map__model" data-zoom="14" data-x="-73.9874068" data-y="40.643180"></div>
+      <ul class="rd-google-map__locations">
+        <li data-x="-73.9874068" data-y="40.643180">
+          <p>9870 St Vincent Place, Glasgow, DC 45 Fr 45. <span>800 2345-6789</span></p>
+        </li>
+      </ul>
+    </div>
+    <!-- END RD Google Map -->
+    <!-- Contact us -->
+    <section class="well-sm-8">
       <div class="container">
-        <div class="row text-center text-md-left">
-          <div class="col-md-7">
-            <h2>Chào mừng bạn đến với chúng tôi</h2>
-            <h3 class="text-primary offset-8 text-bold">
-              Giơi thiệu tóm tắt về chúng tôi
+        <div class="row">
+          <div class="col-md-4 ">
+            <h2>Contact us</h2>
+            <h3 class="text-bold text-primary line-height-3 offset-12">USA - LOS ANGELES,<br>
+              901 East E Street,<br>
+              Wilmington, CA 90744
             </h3>
-            <p class="letter-spacing-2">
-              Ở đây chúng tôi may mắn có một sự phong phú của nhà hàng tuyệt vời mà mọi người từ khắp mọi miền đất nước đến tham quan . Thật không may , chúng tôi chưa đám ứng đủ cho tất cả mọi người vì cửa hàng chưa đủ lớn
-            </p>
-            <p class="letter-spacing-2">
-              Sử dụng phần mềm đặt hàng là nghệ thuật của chúng tôi mà làm cho nó nhanh chóng và dễ dàng để đặt hàng từ các nhà hàng yêu thích của bạn một cách nhanh chóng và chính xác hơn bằng máy tính hoặc điện thoại của bạn . thực phẩm của bạn sẽ được cung cấp một cách nhanh chóng
-
-              <br>Chúng tôi thậm chí còn cung cấp những món ăn nổi tiếng và những món ăn từ bãi biển khắp nơi trên thế giới.
-            </p>
+            <dl class="contact_list">
+              <dt>Freephone:</dt>
+              <dd>
+                <a href="callto:#"> +1 800 559 6580</a>
+              </dd>
+              <dt>Telephone:</dt>
+              <dd>
+                <a href="callto:#">+1 800 603 6035</a>
+              </dd>
+              <dt>FAX:</dt>
+              <dd>
+                <a href="callto:#">+1 800 889 9898</a>
+              </dd>
+              <dd>
+                E-mail:
+                <a href="mailto:#">mail@demolink.org</a>
+              </dd>
+            </dl>
           </div>
-          <div class="col-md-5">
-            <img class="offset-9" width="470" height="392" alt="" src="assets/images/page-2_img04.jpg">
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- END Welcome to our site -->
-    <!-- Delivery Fee -->
-    <section class="well-md-1 bg3">
-      <div class="container">
-        <div class="row text-center text-sm-left">
-          <div class="col-md-7 col-md-preffix-5 col-sm-preffix-3 col-sm-9 ">
-            <h2>Phí giao hàng</h2>
-            <p class="offset-10">
-              Phí giao hàng tiêu chuẩn của chúng tôi là giữa 20k đến 100k ( tùy theo vị trí ) mỗi nhà hàng cho đơn đặt hàng trực tuyến hoặc thông qua các trung tâm cuộc gọi của chúng tôi. đơn đặt hàng tối thiểu được yêu cầu
-            </p>
-            <a class="btn btn-sm btn-default btn-default-1 offset-5" href="#"> đọc thêm
-              <span></span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- END Delivery Fee -->
-    <!-- Meet our team -->
-    <section class="well-sm-3 bg-default-4">
-      <div class="container text-center text-sm-left">
-        <h2>Nhận viên của chúng tôi</h2>
-        <div class="row block2 offset-11">
-          <div class="col-md-3 col-sm-6">
-            <img width="270" height="270" alt="" src="assets/images/page-2_img06.jpg">
-            <h3><a href="#">Bùi Thành Nam</a></h3>
-            <p>
-              Nhóm trưởng
-            </p>
-          </div>
-          <div class="col-md-3 col-sm-6 offset-7">
-            <img width="270" height="270" alt="" src="assets/images/page-2_img07.jpg">
-            <h3><a href="#">Nguyễn Văn Tuấn</a></h3>
-            <p>
-              Quản lý
-            </p>
-          </div>
-          <div class="col-md-3 col-sm-6 offset-6">
-            <img width="270" height="270" alt="" src="assets/images/page-2_img08.jpg">
-            <h3><a href="#">Lê Thị Giang</a></h3>
-            <p>
-              Giao hàng
-            </p>
-          </div>
-          <div class="col-md-3 col-sm-6 offset-6">
-            <img width="270" height="270" alt="" src="assets/images/page-2_img09.jpg">
-            <h3><a href="#">Bùi Tuấn Nghĩa</a></h3>
-            <p>
-              Giao hàng
-            </p>
+          <div class="col-md-8">
+            <!-- RD Mailform -->
+            <form class='rd-mailform' method="post" action="bat/rd-mailform.php">
+              <!-- RD Mailform Type -->
+              <input type="hidden" name="form-type" value="contact"/>
+              <!-- END RD Mailform Type -->
+              <fieldset>
+                <label data-add-placeholder>
+                  <input type="text"
+                         name="name"
+                         placeholder="Name"
+                         data-constraints="@NotEmpty @LettersOnly"/>
+                </label>
+                <label data-add-placeholder>
+                  <input type="text"
+                         name="email"
+                         placeholder="Email"
+                         data-constraints="@NotEmpty @Email"/>
+                </label>
+                <label data-add-placeholder>
+                  <input type="text"
+                         name="phone"
+                         placeholder="Phone:"
+                         data-constraints="@Phone"/>
+                </label>
+                <label class="message" data-add-placeholder>
+                            <textarea name="message" placeholder="Message"
+                                      data-constraints="@NotEmpty"></textarea>
+                </label>
+                <div class="mfControls">
+                  <button class="btn btn-xs btn-default-2" type="submit">Submit message</button>
+                </div>
+                <div class="mfInfo"></div>
+              </fieldset>
+            </form>
+            <!-- END RD Mailform -->
           </div>
         </div>
       </div>
     </section>
-    <!-- Meet our team -->
-
+    <!-- END Contact us -->
   </main>
+
   <!--========================================================
                             FOOTER
   ==========================================================-->

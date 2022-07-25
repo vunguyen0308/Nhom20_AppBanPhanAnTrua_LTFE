@@ -8,6 +8,7 @@ import { RegisterComponent } from './register/register.component';
 import { AboutComponent } from './about/about.component';
 import { MasterComponent } from './master/master.component';
 import { Notfound404Component } from './notfound404/notfound404.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { Notfound404Component } from './notfound404/notfound404.component';
     RegisterComponent,
     AboutComponent,
     MasterComponent,
-    Notfound404Component
+    Notfound404Component,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
