@@ -1,346 +1,41 @@
+<app-slider></app-slider>
+<section class="map" >
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31346.67517543586!2d106.76672792249444!3d10.862150701699553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d88215693361%3A0x95009cc1803a7e51!2zTGluaCBUcnVuZywgVGjhu6cgxJDhu6ljLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1659448542124!5m2!1svi!2s" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-<body>
-<!-- The Main Wrapper -->
-<div class="page">
-  <!--For older internet explorer-->
-  <div class="old-ie" style='background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;'>
-    <a href="http://windows.microsoft.com/en-US/internet-explorer/..">
-      <img src="assets/images/warning_bar_0000_us.jpg" height="42" width="820"
-           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
-    </a>
-  </div>
-  <!--END block for older internet explorer-->
-  <!--========================================================
-                            HEADER
-  =========================================================-->
-  <header class="page-header">
-    <!-- RD Navbar -->
-    <div class="rd-navbar-wrap">
-      <nav class="rd-navbar" data-rd-navbar-lg="rd-navbar-static">
-        <div class="rd-navbar-inner">
-          <!-- RD Navbar Panel -->
-          <div class="rd-navbar-panel">
-            <!-- RD Navbar Toggle -->
-            <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar"><span></span></button>
-            <!-- END RD Navbar Toggle -->
-            <!-- RD Navbar Brand -->
-            <div class="rd-navbar-brand">
-              <a href="index.html">
-                <span class="brand-name text-white text-bold">Ăn uống <span>Ship</span></span>
-                <span class="brand-slogan text-thin">Món quà ngon</span>
-              </a>
-            </div>
-            <!-- END RD Navbar Brand -->
-          </div>
-          <!-- END RD Navbar Panel -->
-          <div class="rd-navbar-nav-wrap">
-            <!-- RD Navbar Search -->
-            <div class="rd-navbar-search">
-              <form class="rd-navbar-search-form" action="search.php" method="GET">
-                <label class="rd-navbar-search-form-input">
-                  <input type="text" name="s" placeholder="Search.." autocomplete="off"/>
-                </label>
-                <button class="rd-navbar-search-form-submit" type="submit"></button>
-              </form>
-              <span class="rd-navbar-live-search-results"></span>
-              <button class="rd-navbar-search-toggle" data-rd-navbar-toggle=".rd-navbar-search"></button>
-            </div>
-            <!-- END RD Navbar Search -->
-            <div class="login1">
-              <button data-toggle=".rd-navbar-info" class="active-toggle">
-                <span class="fa fa-user"></span>
-              </button>
-              <div class="rd-navbar-info">
-                <h2>
-                  Đăng nhập:
-                </h2>
-                <!-- form -->
-                <form>
-                  <fieldset>
-                    <input type="text"
-                           name="email"
-                           placeholder="Email address">
-                    <input type="password" class="form-control" placeholder="Password">
-                    <a href="#">Quên mật khẩu?</a>
-                    <div class="mfControls ">
-                      <button class="btn btn-sm btn-primary" >Đăng nhập</button>
-                    </div>
-                    <a href="#" class="text-uppercase text-bold">hoặc đăng ký</a>
-                  </fieldset>
-                </form>
-                <!-- END form -->
-              </div>
-            </div>
-            <ul class="rd-navbar-nav">
-              <li class="active">
-                <a href="home.html">Trang chủ</a>
-              </li>
-              <li>
-                <a routerLink="/about">Chúng tôi</a>
-                <!-- RD Navbar Dropdown -->
-                <ul class="rd-navbar-dropdown">
-                  <li>
-                    <a href="#">Giá</a>
-                  </li>
-                  <li>
-                    <a href="#">Hỏi đáp</a>
-                    <ul class="rd-navbar-dropdown">
-                      <li>
-                        <a href='#'>Lịch sử</a>
-                      </li>
-                      <li>
-                        <a href='#'>Điều khoản</a>
-                      </li>
-                      <li>
-                        <a href='#'>Diễn đàn</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">Nhân viên</a>
-                  </li>
-                </ul>
-                <!-- END RD Navbar Dropdown -->
-              </li>
-              <li>
-                <a href="menu.html">Thực đơn</a>
-              </li>
-              <li>
-                <a href="gallery.html">Ảnh</a>
-              </li>
-              <li>
-                <a href="contact.html">Liên hệ</a>
-              </li>
-            </ul>
-            <!-- END RD Navbar Nav -->
-          </div>
-        </div>
-      </nav>
-    </div>
-    <!-- END RD Navbar -->
-  </header>
-  <!--========================================================
-                            CONTENT
-  =========================================================-->
-  <main class="page-content">
-    <!-- logo + Search -->
-    <section class="well-xs bg1 display-2">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 wow fadeInLeft">
-            <div class="rd-navbar-brand offset-1">
-              <a href="index.html">
-                <span class="brand-name text-primary text-bold">Ẩm thực<br> <span>Ship</span></span>
-                <span class="brand-slogan text-thin">Món quà ngon </span>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4 col-md-preffix-5 wow fadeInRight block1">
-            <h3 class="line-height-1 text-default-1 text-bold">Pizza?<br>
-              Đặt tại<br>
-              FOOD Ship
-            </h3>
-            <div class="login">
-              <button data-toggle=".rd-navbar-info" class="active-toggle">
-                <span class="fa fa-user text-primary"></span>Đăng nhập
-              </button>
-              <div class="rd-navbar-info">
-                <h2>
-                  Đăng nhập:
-                </h2>
-                <!-- form -->
-                <form>
-                  <fieldset>
-                    <input type="text"
-                           name="email"
-                           placeholder="Email address">
-                    <input type="password" class="form-control" placeholder="Password">
-                    <a href="#">Quên mật khẩu?</a>
-                    <div class="mfControls ">
-                      <button class="btn btn-sm btn-primary" >Đăng nhập</button>
-                    </div>
-                    <a href="#" class="text-uppercase text-bold">hoặt đăng ký</a>
-                  </fieldset>
-                </form>
-                <!-- END form -->
-              </div>
-            </div>
-            <!-- RD Navbar Search -->
-            <div class="rd-navbar-search rd-navbar-search1">
-              <form class="rd-navbar-search-form" action="search.php" method="GET">
-                <label class="rd-navbar-search-form-input">
-                  <input type="text" name="s" placeholder="Search the food" autocomplete="off"/>
-                </label>
-                <button class="rd-navbar-search-form-submit" type="submit"></button>
-              </form>
-              <span class="rd-navbar-live-search-results"></span>
-              <button class="rd-navbar-search-toggle" data-rd-navbar-toggle=".rd-navbar-search"></button>
-            </div>
-            <!-- END RD Navbar Search -->
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- END logo + Search -->
-    <!-- RD Google Map -->
-    <div class="rd-google-map">
-      <div id="google-map" class="rd-google-map__model" data-zoom="14" data-x="-73.9874068" data-y="40.643180"></div>
-      <ul class="rd-google-map__locations">
-        <li data-x="-73.9874068" data-y="40.643180">
-          <p>9870 St Vincent Place, Glasgow, DC 45 Fr 45. <span>800 2345-6789</span></p>
-        </li>
-      </ul>
-    </div>
-    <!-- END RD Google Map -->
-    <!-- Contact us -->
-    <section class="well-sm-8">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 ">
-            <h2>Contact us</h2>
-            <h3 class="text-bold text-primary line-height-3 offset-12">USA - LOS ANGELES,<br>
-              901 East E Street,<br>
-              Wilmington, CA 90744
-            </h3>
-            <dl class="contact_list">
-              <dt>Freephone:</dt>
-              <dd>
-                <a href="callto:#"> +1 800 559 6580</a>
-              </dd>
-              <dt>Telephone:</dt>
-              <dd>
-                <a href="callto:#">+1 800 603 6035</a>
-              </dd>
-              <dt>FAX:</dt>
-              <dd>
-                <a href="callto:#">+1 800 889 9898</a>
-              </dd>
-              <dd>
-                E-mail:
-                <a href="mailto:#">mail@demolink.org</a>
-              </dd>
-            </dl>
-          </div>
-          <div class="col-md-8">
-            <!-- RD Mailform -->
-            <form class='rd-mailform' method="post" action="bat/rd-mailform.php">
-              <!-- RD Mailform Type -->
-              <input type="hidden" name="form-type" value="contact"/>
-              <!-- END RD Mailform Type -->
-              <fieldset>
-                <label data-add-placeholder>
-                  <input type="text"
-                         name="name"
-                         placeholder="Name"
-                         data-constraints="@NotEmpty @LettersOnly"/>
-                </label>
-                <label data-add-placeholder>
-                  <input type="text"
-                         name="email"
-                         placeholder="Email"
-                         data-constraints="@NotEmpty @Email"/>
-                </label>
-                <label data-add-placeholder>
-                  <input type="text"
-                         name="phone"
-                         placeholder="Phone:"
-                         data-constraints="@Phone"/>
-                </label>
-                <label class="message" data-add-placeholder>
-                            <textarea name="message" placeholder="Message"
-                                      data-constraints="@NotEmpty"></textarea>
-                </label>
-                <div class="mfControls">
-                  <button class="btn btn-xs btn-default-2" type="submit">Submit message</button>
-                </div>
-                <div class="mfInfo"></div>
-              </fieldset>
-            </form>
-            <!-- END RD Mailform -->
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- END Contact us -->
-  </main>
+</section>
 
-  <!--========================================================
-                            FOOTER
-  ==========================================================-->
-  <footer class="page-footer bg-default-3">
-    <div class="container">
-      <div class="row text-center text-md-left">
-        <div class="col-md-3">
-          <!-- RD Navbar Brand -->
-          <div class="rd-navbar-brand">
-            <a href="index.html">
-              <span class="brand-name text-white text-bold">Ẩm thực<br> <span>Ship</span></span>
-            </a>
-          </div>
-          <!-- END RD Navbar Brand -->
-          <div class="copyright">
-            &#169;<span id="copyright-year"></span> |
-            <a href='index-5.html'>Điều khoản</a>
-            <!-- {%FOOTER_LINK} -->
-          </div>
-        </div>
-        <div class="col-md-5">
-          <address class="contact-info">
-            <dl>
-              <dt>Cầu giấy - Hà nội,</dt>
-              <dt>CMC, Trần thái tông</dt>
-              <dt>E -mail:<a href="mailto:#">media@gmail.com</a></dt>
-              <dd>
-                <a href="callto:#">19008123</a>
-              </dd>
-            </dl>
-          </address>
-        </div>
-        <div class="col-md-2">
-          <ul class="inline-list text-center text-lg-left">
-            <li>
-              <a class="icon-xs fa-facebook" href="#"></a>
-            </li>
-            <li>
-              <a class="icon-xs fa-google-plus" href="#"></a>
-            </li>
-            <li>
-              <a class="icon-xs fa-linkedin" href="#"></a>
-            </li>
-            <li>
-              <a class="icon-xs fa-twitter" href="#"></a>
-            </li>
-          </ul>
-        </div>
+<section class="order">
+  <h3 class="heading" style="border-bottom: none"> Contact now </h3>
+
+  <form action="">
+    <div class="inputBox">
+      <div class="input">
+        <span>your name</span>
+        <input type="text" placeholder="enter your name">
       </div>
     </div>
-  </footer>
-</div>
+    <div class="inputBox">
+      <div class="input">
+        <span>your Email</span>
+        <input type="text" placeholder="enter your email">
+      </div>
+    </div>
+    <div class="inputBox">
+      <div class="input">
+        <span>your phone number</span>
+        <input type="number" placeholder="enter your phone number">
+      </div>
+    </div>
+    <div class="inputBox">
+      <div class="input">
+        <span>your message</span>
+        <textarea name="" placeholder="enter your message" cols="30" rows="10"></textarea>
+      </div>
+    </div>
+    <div class="btn-submit">
+      <input type="submit"  value="Send" class="btn">
+    </div>
 
-<!-- Core Scripts -->
-<script src="assets/js/core.min.js"></script>
-<!-- Additional Functionality Scripts -->
-<script src="assets/js/script.js"></script>
-<!-- begin olark code -->
-<script data-cfasync="false" type='text/javascript'>/*<![CDATA[*/window.olark||(function(c){var f=window,d=document,l=f.location.protocol=="https:"?"https:":"http:",z=c.name,r="load";var nt=function(){
-  f[z]=function(){
-    (a.s=a.s||[]).push(arguments)};var a=f[z]._={
-  },q=c.methods.length;while(q--){(function(n){f[z][n]=function(){
-    f[z]("call",n,arguments)}})(c.methods[q])}a.l=c.loader;a.i=nt;a.p={
-    0:+new Date};a.P=function(u){
-    a.p[u]=new Date-a.p[0]};function s(){
-    a.P(r);f[z](r)}f.addEventListener?f.addEventListener(r,s,false):f.attachEvent("on"+r,s);var ld=function(){function p(hd){
-    hd="head";return["<",hd,"></",hd,"><",i,' onl' + 'oad="var d=',g,";d.getElementsByTagName('head')[0].",j,"(d.",h,"('script')).",k,"='",l,"//",a.l,"'",'"',"></",i,">"].join("")}var i="body",m=d[i];if(!m){
-    return setTimeout(ld,100)}a.P(1);var j="appendChild",h="createElement",k="src",n=d[h]("div"),v=n[j](d[h](z)),b=d[h]("iframe"),g="document",e="domain",o;n.style.display="none";m.insertBefore(n,m.firstChild).id=z;b.frameBorder="0";b.id=z+"-loader";if(/MSIE[ ]+6/.test(navigator.userAgent)){
-    b.src="javascript:false"}b.allowTransparency="true";v[j](b);try{
-    b.contentWindow[g].open()}catch(w){
-    c[e]=d[e];o="javascript:var d="+g+".open();d.domain='"+d.domain+"';";b[k]=o+"void(0);"}try{
-    var t=b.contentWindow[g];t.write(p());t.close()}catch(x){
-    b[k]=o+'d.write("'+p().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};ld()};nt()})({
-  loader: "static.olark.com/jsclient/loader0.js",name:"olark",methods:["configure","extend","declare","identify"]});
-/* custom configuration goes here (www.olark.com/documentation) */
-olark.identify('7830-582-10-3714');/*]]>*/</script><noscript><a href="https://www.olark.com/site/7830-582-10-3714/contact" title="Contact us" target="_blank">Questions? Feedback?</a> powered by <a href="http://www.olark.com?welcome" title="Olark live chat software">Olark live chat software</a></noscript>
-<!-- end olark code -->
+  </form>
 
-</body>
-
+</section>

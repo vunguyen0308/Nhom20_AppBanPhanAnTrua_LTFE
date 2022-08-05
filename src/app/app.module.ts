@@ -9,6 +9,9 @@ import { AboutComponent } from './about/about.component';
 import { MasterComponent } from './master/master.component';
 import { Notfound404Component } from './notfound404/notfound404.component';
 import { ContactComponent } from './contact/contact.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { SliderComponent } from './slider/slider.component';
 
 @NgModule({
   declarations: [
@@ -18,13 +21,16 @@ import { ContactComponent } from './contact/contact.component';
     AboutComponent,
     MasterComponent,
     Notfound404Component,
-    ContactComponent
+    ContactComponent,
+    HeaderComponent,
+    FooterComponent,
+    SliderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [MasterComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
