@@ -1,739 +1,355 @@
 <!DOCTYPE html>
-<html lang="en" class="wide smoothscroll wow-animation">
+<html lang="en">
 <head>
-    <!-- Site Title -->
-    <title>Menu</title>
-    <meta name="format-detection" content="telephone=no"/>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
-    <!-- Stylesheets -->
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/restaurant.css">
-    <link rel="stylesheet" href="css/thin.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Lunch - Menu</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
-    <!--[if lt IE 10]>
-    <script src="js/html5shiv.min.js"></script>
-    <![endif]-->
+
 </head>
 <body>
-<!-- The Main Wrapper -->
-<div class="page">
-    <!--For older internet explorer-->
-    <div class="old-ie" style='background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;'>
-        <a href="http://windows.microsoft.com/en-US/internet-explorer/..">
-            <img src="images/warning_bar_0000_us.jpg" height="42" width="820"
-                 alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
-        </a>
+    
+<!-- header section starts      -->
+
+<header>
+
+    <a href="#" class="logo"><i class="fas fa-utensils"></i>Box Lunch</a>
+
+    <nav class="navbar">
+        <a class="active" href="#home">Trang chủ</a>
+        <a href="#about">Về chúng tôi</a>
+        <a href="#menu">Thực đơn</a>
+        <a href="#order">Liên hệ</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <i class="fas fa-search" id="search-icon"></i>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-shopping-cart"></a>
     </div>
-    <!--END block for older internet explorer-->
-    <!--========================================================
-                              HEADER
-    =========================================================-->
-    <header class="page-header">
-        <!-- RD Navbar -->
-        <div class="rd-navbar-wrap">
-            <nav class="rd-navbar" data-rd-navbar-lg="rd-navbar-static">
-                <div class="rd-navbar-inner">
-                    <!-- RD Navbar Panel -->
-                    <div class="rd-navbar-panel">
-                        <!-- RD Navbar Toggle -->
-                        <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar"><span></span></button>
-                        <!-- END RD Navbar Toggle -->
-                        <!-- RD Navbar Brand -->
-                        <div class="rd-navbar-brand">
-                            <a href="index.html">
-                                <span class="brand-name text-white text-bold">Ăn uống <span>Ship</span></span>
-                                <span class="brand-slogan text-thin">Món quà ngon</span>
-                            </a>
-                        </div>
-                        <!-- END RD Navbar Brand -->
-                    </div>
-                    <!-- END RD Navbar Panel -->
-                    <div class="rd-navbar-nav-wrap">
-                        <!-- RD Navbar Search -->
-                        <div class="rd-navbar-search">
-                            <form class="rd-navbar-search-form" action="search.php" method="GET">
-                                <label class="rd-navbar-search-form-input">
-                                    <input type="text" name="s" placeholder="Search.." autocomplete="off"/>
-                                </label>
-                                <button class="rd-navbar-search-form-submit" type="submit"></button>
-                            </form>
-                            <span class="rd-navbar-live-search-results"></span>
-                            <button class="rd-navbar-search-toggle" data-rd-navbar-toggle=".rd-navbar-search"></button>
-                        </div>
-                        <!-- END RD Navbar Search -->
-                        <div class="login1">
-                            <button data-toggle=".rd-navbar-info" class="active-toggle">
-                                <span class="fa fa-user"></span>
-                            </button>
-                            <div class="rd-navbar-info">
-                                <h2>
-                                    Đăng nhập:
-                                </h2>
-                                <!-- form -->
-                                <form>
-                                    <fieldset>
-                                        <input type="text"
-                                               name="email"
-                                               placeholder="Email address">
-                                        <input type="password" class="form-control" placeholder="Password">
-                                        <a href="#">Quên mật khẩu?</a>
-                                        <div class="mfControls ">
-                                            <button class="btn btn-sm btn-primary" >Đăng nhập</button>
-                                        </div>
-                                        <a href="#" class="text-uppercase text-bold">hoặc đăng ký</a>
-                                    </fieldset>
-                                </form>
-                                <!-- END form -->
-                            </div>
-                        </div>
-                        <ul class="rd-navbar-nav">
-                            <li class="active">
-                                <a href="home.html">Trang chủ</a>
-                            </li>
-                            <li>
-                                <a href="about.html">Chúng tôi</a>
-                                <!-- RD Navbar Dropdown -->
-                                <ul class="rd-navbar-dropdown">
-                                    <li>
-                                        <a href="#">Giá</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Hỏi đáp</a>
-                                        <ul class="rd-navbar-dropdown">
-                                            <li>
-                                                <a href='#'>Lịch sử</a>
-                                            </li>
-                                            <li>
-                                                <a href='#'>Điều khoản</a>
-                                            </li>
-                                            <li>
-                                                <a href='#'>Diễn đàn</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#">Nhân viên</a>
-                                    </li>
-                                </ul>
-                                <!-- END RD Navbar Dropdown -->
-                            </li>
-                            <li>
-                                <a href="menu.html">Thực đơn</a>
-                            </li>
-                            <li>
-                                <a href="gallery.html">Ảnh</a>
-                            </li>
-                            <li>
-                                <a href="contact.html">Liên hệ</a>
-                            </li>
-                        </ul>
-                        <!-- END RD Navbar Nav -->
-                    </div>
-                </div>
-            </nav>
-        </div>
-        <!-- END RD Navbar -->
-    </header>
-    <!--========================================================
-                              CONTENT
-    =========================================================-->
-    <main class="page-content">
-        <!-- logo + Search -->
-     <section class="well-xs bg1 display-2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 wow fadeInLeft">
-                        <div class="rd-navbar-brand offset-1">
-                            <a href="index.html">
-                                <span class="brand-name text-primary text-bold">Ẩm thực<br> <span>Ship</span></span>
-                                <span class="brand-slogan text-thin">Món quà ngon </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-md-preffix-5 wow fadeInRight block1">
-                        <h3 class="line-height-1 text-default-1 text-bold">Pizza?<br>
-                            Đặt tại<br>
-                            FOOD Ship
-                        </h3>
-                        <div class="login">
-                            <button data-toggle=".rd-navbar-info" class="active-toggle">
-                                <span class="fa fa-user text-primary"></span>Đăng nhập
-                            </button>
-                            <div class="rd-navbar-info">
-                                <h2>
-                                    Đăng nhập:
-                                </h2>
-                                <!-- form -->
-                                <form>
-                                    <fieldset>
-                                        <input type="text"
-                                               name="email"
-                                               placeholder="Email address">
-                                        <input type="password" class="form-control" placeholder="Password">
-                                        <a href="#">Quên mật khẩu?</a>
-                                        <div class="mfControls ">
-                                            <button class="btn btn-sm btn-primary" >Đăng nhập</button>
-                                        </div>
-                                        <a href="#" class="text-uppercase text-bold">hoặt đăng ký</a>
-                                    </fieldset>
-                                </form>
-                                <!-- END form -->
-                            </div>
-                        </div>
-                        <!-- RD Navbar Search -->
-                        <div class="rd-navbar-search rd-navbar-search1">
-                            <form class="rd-navbar-search-form" action="search.php" method="GET">
-                                <label class="rd-navbar-search-form-input">
-                                    <input type="text" name="s" placeholder="Search the food" autocomplete="off"/>
-                                </label>
-                                <button class="rd-navbar-search-form-submit" type="submit"></button>
-                            </form>
-                            <span class="rd-navbar-live-search-results"></span>
-                            <button class="rd-navbar-search-toggle" data-rd-navbar-toggle=".rd-navbar-search"></button>
-                        </div>
-                        <!-- END RD Navbar Search -->
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- END logo + Search -->
-        <!-- Carousel 1-->
-        <section class="well-sm-4 text-center text-md-left">
-            <div class="container">
-                <h2>Thực đơn pizza</h2>
-                <div class="owl-carousel owl-carousel-1" data-items="1" data-loop="true" data-dots="true">
-                    <!-- owl-item 1 -->
-                    <div class="owl-item">
-                        <div class="row text-center text-md-left">
-                            <div class="col-md-4">
-                                <img width="370" height="270" alt="" src="images/page-3_img01.jpg">
-                                <div class="owl-ctn bg-default-7">
-                                    <h6 class="text-bold text-primary"><a href="#"> Pepperoni Extreme </a><span>$ 7.47</span></h6>
-                                    <p>
-                                        Pepperoni sliced, diced and julienned, featuring ....
-                                    </p>
-                                    <a class="btn btn-xs btn-default-2" href="#">order now</a>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <img width="370" height="270" alt="" src="images/page-3_img02.jpg">
-                                <div class="owl-ctn bg-default-7">
-                                    <h6 class="text-bold text-primary"><a href="#">Chicken Bacon Ranch</a><span>$ 3.54</span></h6>
-                                    <p>
-                                        Grilled garlic chicken, smoked bacon, jack and cheddar ...
-                                    </p>
-                                    <a class="btn btn-xs btn-default-2" href="#">order now</a>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <img width="370" height="270" alt="" src="images/page-3_img03.jpg">
-                                <div class="owl-ctn bg-default-7">
-                                    <h6 class="text-bold text-primary"><a href="#">Sweet Pig </a><span>$ 5.47</span></h6>
-                                    <p>
-                                        Oven-roasted ham, pineapple and seasoned tomatoes
-                                    </p>
-                                    <a class="btn btn-xs btn-default-2" href="#">order now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- owl-item 2 -->
-                    <div class="owl-item">
-                        <div class="row text-center text-md-left">
-                            <div class="col-md-4">
-                                <img width="370" height="270" alt="" src="images/page-3_img01.jpg">
-                                <div class="owl-ctn bg-default-7">
-                                    <h6 class="text-bold text-primary"><a href="#">Pepperoni Extreme </a><span>$ 7.47</span></h6>
-                                    <p>
-                                        Pepperoni sliced, diced and julienned, featuring ....
-                                    </p>
-                                    <a class="btn btn-xs btn-default-2" href="#">order now</a>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <img width="370" height="270" alt="" src="images/page-3_img02.jpg">
-                                <div class="owl-ctn bg-default-7">
-                                    <h6 class="text-bold text-primary"><a href="#">Chicken Bacon Ranch</a><span>$ 3.54</span></h6>
-                                    <p>
-                                        Grilled garlic chicken, smoked bacon, jack and cheddar ...
-                                    </p>
-                                    <a class="btn btn-xs btn-default-2" href="#">order now</a>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <img width="370" height="270" alt="" src="images/page-3_img03.jpg">
-                                <div class="owl-ctn bg-default-7">
-                                    <h6 class="text-bold text-primary"><a href="#">Sweet Pig </a><span>$ 5.47</span></h6>
-                                    <p>
-                                        Oven-roasted ham, pineapple and seasoned tomatoes
-                                    </p>
-                                    <a class="btn btn-xs btn-default-2" href="#">order now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- owl-item 3 -->
-                    <div class="owl-item">
-                        <div class="row text-center text-md-left">
-                            <div class="col-md-4">
-                                <img width="370" height="270" alt="" src="images/page-3_img01.jpg">
-                                <div class="owl-ctn bg-default-7">
-                                    <h6 class="text-bold text-primary"><a href="#">Pepperoni Extreme </a><span>$ 7.47</span></h6>
-                                    <p>
-                                        Pepperoni sliced, diced and julienned, featuring ....
-                                    </p>
-                                    <a class="btn btn-xs btn-default-2" href="#">order now</a>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <img width="370" height="270" alt="" src="images/page-3_img02.jpg">
-                                <div class="owl-ctn bg-default-7">
-                                    <h6 class="text-bold text-primary"><a href="#">Chicken Bacon Ranch</a><span>$ 3.54</span></h6>
-                                    <p>
-                                        Grilled garlic chicken, smoked bacon, jack and cheddar ...
-                                    </p>
-                                    <a class="btn btn-xs btn-default-2" href="#">order now</a>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <img width="370" height="270" alt="" src="images/page-3_img03.jpg">
-                                <div class="owl-ctn bg-default-7">
-                                    <h6 class="text-bold text-primary"><a href="#">Sweet Pig </a><span>$ 5.47</span></h6>
-                                    <p>
-                                        Oven-roasted ham, pineapple and seasoned tomatoes
-                                    </p>
-                                    <a class="btn btn-xs btn-default-2" href="#">order now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- END Carousel 1 -->
-        <!-- Carousel 2-->
-        <section class="well-sm-5 bg-default-4 text-center text-md-left">
-            <div class="container">
-                <h2>Sushi & rolls menu</h2>
-                <div class="owl-carousel owl-carousel-1" data-items="1" data-loop="true" data-dots="true">
-                    <!-- owl-item 1 -->
-                    <div class="owl-item">
-                        <div class="row text-center text-md-left">
-                            <div class="col-md-4">
-                                <img width="370" height="270" alt="" src="images/page-3_img04.jpg">
-                                <div class="owl-ctn bg-white">
-                                    <h6 class="text-bold text-primary"><a href="#">Agedashi Tofu </a><span>$ 7.99</span></h6>
-                                    <p>
-                                        Deep fried bean curd in a sweet ginger sauce
-                                    </p>
-                                    <a class="btn btn-xs btn-default-2" href="#">order now</a>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <img width="370" height="270" alt="" src="images/page-3_img05.jpg">
-                                <div class="owl-ctn bg-white">
-                                    <h6 class="text-bold text-primary"><a href="#">Yakitori (3 skewers)</a><span>$ 9.80</span></h6>
-                                    <p>
 
-                                        Deep fried soft shell crab served with special sauce
-                                    </p>
-                                    <a class="btn btn-xs btn-default-2" href="#">order now</a>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <img width="370" height="270" alt="" src="images/page-3_img06.jpg">
-                                <div class="owl-ctn bg-white">
-                                    <h6 class="text-bold text-primary"><a href="#">Spring roll</a> <span>$ 4.50</span></h6>
-                                    <p>
-                                        Flavorful tofu, crisp veggies, delectable sauce
-                                    </p>
-                                    <a class="btn btn-xs btn-default-2" href="#">order now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- owl-item 2 -->
-                    <div class="owl-item">
-                        <div class="row text-center text-md-left">
-                            <div class="col-md-4">
-                                <img width="370" height="270" alt="" src="images/page-3_img04.jpg">
-                                <div class="owl-ctn bg-white">
-                                    <h6 class="text-bold text-primary"><a href="#">Agedashi Tofu</a> <span>$ 7.99</span></h6>
-                                    <p>
-                                        Deep fried bean curd in a sweet ginger sauce
-                                    </p>
-                                    <a class="btn btn-xs btn-default-2" href="#">order now</a>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <img width="370" height="270" alt="" src="images/page-3_img05.jpg">
-                                <div class="owl-ctn bg-white">
-                                    <h6 class="text-bold text-primary"><a href="#">Yakitori (3 skewers)</a><span>$ 9.80</span></h6>
-                                    <p>
-                                        Deep fried soft shell crab served with special sauce
-                                    </p>
-                                    <a class="btn btn-xs btn-default-2" href="#">order now</a>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <img width="370" height="270" alt="" src="images/page-3_img06.jpg">
-                                <div class="owl-ctn bg-white">
-                                    <h6 class="text-bold text-primary"><a href="#">Spring roll</a> <span>$ 4.50</span></h6>
-                                    <p>
-                                        Flavorful tofu, crisp veggies, delectable sauce
-                                    </p>
-                                    <a class="btn btn-xs btn-default-2" href="#">order now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- owl-item 3 -->
-                    <div class="owl-item">
-                        <div class="row text-center text-md-left">
-                            <div class="col-md-4">
-                                <img width="370" height="270" alt="" src="images/page-3_img04.jpg">
-                                <div class="owl-ctn bg-white">
-                                    <h6 class="text-bold text-primary"><a href="#">Agedashi Tofu</a> <span>$ 7.99</span></h6>
-                                    <p>
-                                        Deep fried bean curd in a sweet ginger sauce
-                                    </p>
-                                    <a class="btn btn-xs btn-default-2" href="#">order now</a>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <img width="370" height="270" alt="" src="images/page-3_img05.jpg">
-                                <div class="owl-ctn bg-white">
-                                    <h6 class="text-bold text-primary"><a href="#">Yakitori (3 skewers)</a><span>$ 9.80</span></h6>
-                                    <p>
-                                        Deep fried soft shell crab served with special sauce
-                                    </p>
-                                    <a class="btn btn-xs btn-default-2" href="#">order now</a>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <img width="370" height="270" alt="" src="images/page-3_img06.jpg">
-                                <div class="owl-ctn bg-white">
-                                    <h6 class="text-bold text-primary"><a href="#">Spring roll</a> <span>$ 4.50</span></h6>
-                                    <p>
-                                        Flavorful tofu, crisp veggies, delectable sauce
-                                    </p>
-                                    <a class="btn btn-xs btn-default-2" href="#">order now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+</header>
+
+<!-- header section ends-->
+
+<!-- search form  -->
+
+<form action="" id="search-form">
+    <input type="search" placeholder="search here..." name="" id="search-box">
+    <label for="search-box" class="fas fa-search"></label>
+    <i class="fas fa-times" id="close"></i>
+</form>
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="swiper-container home-slider">
+
+        <div class="swiper-wrapper wrapper">
+
+            <div class="swiper-slide slide">
+                <div class="content">
+                    <span>our special dish</span>
+                    <h3>spicy noodles</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit natus dolor cumque?</p>
+                    <a href="#" class="btn">order now</a>
+                </div>
+                <div class="image">
+                    <img src="images/home-img-1.png" alt="">
                 </div>
             </div>
-        </section>
-        <!-- END Carousel 2 -->
-        <!-- Carousel 3-->
-        <section class="well-sm-4 text-center text-md-left">
-            <div class="container">
-                <h2>Desserts menu</h2>
-                <div class="owl-carousel owl-carousel-1" data-items="1" data-loop="true" data-dots="true">
-                    <!-- owl-item 1 -->
-                    <div class="owl-item">
-                        <div class="row text-center text-md-left">
-                            <div class="col-md-4">
-                                <img width="370" height="270" alt="" src="images/page-3_img07.jpg">
-                                <div class="owl-ctn bg-default-7">
-                                    <h6 class="text-bold text-primary"><a href="#">Apple cake </a> <span>$ 3.87</span></h6>
-                                    <p>
-                                        Velvety mascarpone & lemon cheesecake topped with ...
-                                    </p>
-                                    <a class="btn btn-xs btn-default-2" href="#">order now</a>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <img width="370" height="270" alt="" src="images/page-3_img08.jpg">
-                                <div class="owl-ctn bg-default-7">
-                                    <h6 class="text-bold text-primary"><a href="#">Tiramisù</a><span>$ 6.00</span></h6>
-                                    <p>
-                                        The classic Italian dessert with vin santo, chocolate shavings & ...
-                                    </p>
-                                    <a class="btn btn-xs btn-default-2" href="#">order now</a>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <img width="370" height="270" alt="" src="images/page-3_img09.jpg">
-                                <div class="owl-ctn bg-default-7">
-                                    <h6 class="text-bold text-primary"><a href="#">Epic brownie </a><span>$ 5.45</span></h6>
-                                    <p>
-                                        Warm fudgy brownie with vanilla ice cream & caramelised ...
-                                    </p>
-                                    <a class="btn btn-xs btn-default-2" href="#">order now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- owl-item 2 -->
-                    <div class="owl-item">
-                        <div class="row text-center text-md-left">
-                            <div class="col-md-4">
-                                <img width="370" height="270" alt="" src="images/page-3_img07.jpg">
-                                <div class="owl-ctn bg-default-7">
-                                    <h6 class="text-bold text-primary"><a href="#">Apple cake </a> <span>$ 3.87</span></h6>
-                                    <p>
-                                        Velvety mascarpone & lemon cheesecake topped with ...
-                                    </p>
-                                    <a class="btn btn-xs btn-default-2" href="#">order now</a>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <img width="370" height="270" alt="" src="images/page-3_img08.jpg">
-                                <div class="owl-ctn bg-default-7">
-                                    <h6 class="text-bold text-primary"><a href="#">Tiramisù</a><span>$ 6.00</span></h6>
-                                    <p>
-                                        The classic Italian dessert with vin santo, chocolate shavings & ...
-                                    </p>
-                                    <a class="btn btn-xs btn-default-2" href="#">order now</a>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <img width="370" height="270" alt="" src="images/page-3_img09.jpg">
-                                <div class="owl-ctn bg-default-7">
-                                    <h6 class="text-bold text-primary"><a href="#">Epic brownie</a> <span>$ 5.45</span></h6>
-                                    <p>
-                                        Warm fudgy brownie with vanilla ice cream & caramelised ...
-                                    </p>
-                                    <a class="btn btn-xs btn-default-2" href="#">order now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- owl-item 3 -->
-                    <div class="owl-item">
-                        <div class="row text-center text-md-left">
-                            <div class="col-md-4">
-                                <img width="370" height="270" alt="" src="images/page-3_img07.jpg">
-                                <div class="owl-ctn bg-default-7">
-                                    <h6 class="text-bold text-primary"><a href="#">Apple cake  </a><span>$ 3.87</span></h6>
-                                    <p>
-                                        Velvety mascarpone & lemon cheesecake topped with ...
-                                    </p>
-                                    <a class="btn btn-xs btn-default-2" href="#">order now</a>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <img width="370" height="270" alt="" src="images/page-3_img08.jpg">
-                                <div class="owl-ctn bg-default-7">
-                                    <h6 class="text-bold text-primary"><a href="#">Tiramisù</a><span>$ 6.00</span></h6>
-                                    <p>
-                                        The classic Italian dessert with vin santo, chocolate shavings & ...
-                                    </p>
-                                    <a class="btn btn-xs btn-default-2" href="#">order now</a>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <img width="370" height="270" alt="" src="images/page-3_img09.jpg">
-                                <div class="owl-ctn bg-default-7">
-                                    <h6 class="text-bold text-primary"><a href="#">Epic brownie </a><span>$ 5.45</span></h6>
-                                    <p>
-                                        Warm fudgy brownie with vanilla ice cream & caramelised ...
-                                    </p>
-                                    <a class="btn btn-xs btn-default-2" href="#">order now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+            <div class="swiper-slide slide">
+                <div class="content">
+                    <span>our special dish</span>
+                    <h3>fried chicken</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit natus dolor cumque?</p>
+                    <a href="#" class="btn">order now</a>
+                </div>
+                <div class="image">
+                    <img src="images/home-img-2.png" alt="">
                 </div>
             </div>
-        </section>
-        <!-- END Carousel 3 -->
-        <!-- Carousel 4-->
-        <section class="well-sm-6 bg-default-4 text-center text-md-left">
-            <div class="container">
-                <h2>Pasta menu</h2>
-                <div class="owl-carousel owl-carousel-1" data-items="1" data-loop="true" data-dots="true">
-                    <!-- owl-item 1 -->
-                    <div class="owl-item">
-                        <div class="row text-center text-md-left">
-                            <div class="col-md-4">
-                                <img width="370" height="270" alt="" src="images/page-3_img10.jpg">
-                                <div class="owl-ctn bg-white">
-                                    <h6 class="text-bold text-primary"><a href="#">Tagliatelle bolognese </a><span>$ 8.99</span></h6>
-                                    <p>
-                                        Gennaro's original pork & beef bolognese recipe, slow cooked ...
-                                    </p>
-                                    <a class="btn btn-xs btn-default-2" href="#">order now</a>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <img width="370" height="270" alt="" src="images/page-3_img11.jpg">
-                                <div class="owl-ctn bg-white">
-                                    <h6 class="text-bold text-primary"><a href="#">Turbo penne arrabbiata</a><span>$ 10.65</span></h6>
-                                    <p>
-                                        A fiery tomato sauce with garlic, basil, scotch bonnet chillies...
-                                    </p>
-                                    <a class="btn btn-xs btn-default-2" href="#">order now</a>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <img width="370" height="270" alt="" src="images/page-3_img12.jpg">
-                                <div class="owl-ctn bg-white">
-                                    <h6 class="text-bold text-primary"><a href="#">Fresh crab spaghetti</a> <span>$ 7.50</span></h6>
-                                    <p>
-                                        With garlic, capers, chilli, fennel, parsley, anchovies, lemon ...
-                                    </p>
-                                    <a class="btn btn-xs btn-default-2" href="#">order now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- owl-item 2 -->
-                    <div class="owl-item">
-                        <div class="row text-center text-md-left">
-                            <div class="col-md-4">
-                                <img width="370" height="270" alt="" src="images/page-3_img10.jpg">
-                                <div class="owl-ctn bg-white">
-                                    <h6 class="text-bold text-primary"><a href="#">Tagliatelle bolognese </a><span>$ 8.99</span></h6>
-                                    <p>
-                                        Gennaro's original pork & beef bolognese recipe, slow cooked ...
-                                    </p>
-                                    <a class="btn btn-xs btn-default-2" href="#">order now</a>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <img width="370" height="270" alt="" src="images/page-3_img11.jpg">
-                                <div class="owl-ctn bg-white">
-                                    <h6 class="text-bold text-primary"><a href="#">Turbo penne arrabbiata</a><span>$ 10.65</span></h6>
-                                    <p>
-                                        A fiery tomato sauce with garlic, basil, scotch bonnet chillies...
-                                    </p>
-                                    <a class="btn btn-xs btn-default-2" href="#">order now</a>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <img width="370" height="270" alt="" src="images/page-3_img12.jpg">
-                                <div class="owl-ctn bg-white">
-                                    <h6 class="text-bold text-primary"><a href="#">Fresh crab spaghetti </a><span>$ 7.50</span></h6>
-                                    <p>
-                                        With garlic, capers, chilli, fennel, parsley, anchovies, lemon ...
-                                    </p>
-                                    <a class="btn btn-xs btn-default-2" href="#">order now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- owl-item 3 -->
-                    <div class="owl-item">
-                        <div class="row text-center text-md-left">
-                            <div class="col-md-4">
-                                <img width="370" height="270" alt="" src="images/page-3_img10.jpg">
-                                <div class="owl-ctn bg-white">
-                                    <h6 class="text-bold text-primary"><a href="#">Tagliatelle bolognese</a><span>$ 8.99</span></h6>
-                                    <p>
-                                        Gennaro's original pork & beef bolognese recipe, slow cooked ...
-                                    </p>
-                                    <a class="btn btn-xs btn-default-2" href="#">order now</a>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <img width="370" height="270" alt="" src="images/page-3_img11.jpg">
-                                <div class="owl-ctn bg-white">
-                                    <h6 class="text-bold text-primary"><a href="#">Turbo penne arrabbiata</a><span>$ 10.65</span></h6>
-                                    <p>
-                                        A fiery tomato sauce with garlic, basil, scotch bonnet chillies...
-                                    </p>
-                                    <a class="btn btn-xs btn-default-2" href="#">order now</a>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <img width="370" height="270" alt="" src="images/page-3_img12.jpg">
-                                <div class="owl-ctn bg-white">
-                                    <h6 class="text-bold text-primary"><a href="#">Fresh crab spaghetti </a><span>$ 7.50</span></h6>
-                                    <p>
-                                        With garlic, capers, chilli, fennel, parsley, anchovies, lemon ...
-                                    </p>
-                                    <a class="btn btn-xs btn-default-2" href="#">order now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+            <div class="swiper-slide slide">
+                <div class="content">
+                    <span>our special dish</span>
+                    <h3>hot pizza</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit natus dolor cumque?</p>
+                    <a href="#" class="btn">order now</a>
+                </div>
+                <div class="image">
+                    <img src="images/home-img-3.png" alt="">
                 </div>
             </div>
-        </section>
-        <!-- END Carousel 4 -->
-    </main>
-    <!--========================================================
-                              FOOTER
-    ==========================================================-->
- <footer class="page-footer bg-default-3">
-        <div class="container">
-            <div class="row text-center text-md-left">
-                <div class="col-md-3">
-                    <!-- RD Navbar Brand -->
-                    <div class="rd-navbar-brand">
-                        <a href="index.html">
-                            <span class="brand-name text-white text-bold">Ẩm thực<br> <span>Ship</span></span>
-                        </a>
-                    </div>
-                    <!-- END RD Navbar Brand -->
-                    <div class="copyright">
-                        &#169;<span id="copyright-year"></span> |
-                        <a href='index-5.html'>Điều khoản</a>
-                        <!-- {%FOOTER_LINK} -->
-                    </div>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+
+<!-- menu section starts  -->
+
+<section class="menu" id="menu">
+
+    <h3 class="sub-heading"> our menu </h3>
+    <h1 class="heading"> today's speciality </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="images/menu-1.jpg" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
                 </div>
-                <div class="col-md-5">
-                    <address class="contact-info">
-                        <dl>
-                            <dt>Cầu giấy - Hà nội,</dt>
-                            <dt>CMC, Trần thái tông</dt>
-                            <dt>E -mail:<a href="mailto:#">media@gmail.com</a></dt>
-                            <dd>
-                                <a href="callto:#">19008123</a>
-                            </dd>
-                        </dl>
-                    </address>
-                </div>
-                <div class="col-md-2">
-                    <ul class="inline-list text-center text-lg-left">
-                        <li>
-                            <a class="icon-xs fa-facebook" href="#"></a>
-                        </li>
-                        <li>
-                            <a class="icon-xs fa-google-plus" href="#"></a>
-                        </li>
-                        <li>
-                            <a class="icon-xs fa-linkedin" href="#"></a>
-                        </li>
-                        <li>
-                            <a class="icon-xs fa-twitter" href="#"></a>
-                        </li>
-                    </ul>
-                </div>
+                <h3>delicious food</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
+                <a href="#" class="btn">add to cart</a>
+                <span class="price">$12.99</span>
             </div>
         </div>
-    </footer>
-</div>
 
-<!-- Core Scripts -->
-<script src="js/core.min.js"></script>
-<!-- Additional Functionality Scripts -->
+        <div class="box">
+            <div class="image">
+                <img src="images/menu-2.jpg" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>delicious food</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
+                <a href="#" class="btn">add to cart</a>
+                <span class="price">$12.99</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/menu-3.jpg" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>delicious food</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
+                <a href="#" class="btn">add to cart</a>
+                <span class="price">$12.99</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/menu-4.jpg" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>delicious food</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
+                <a href="#" class="btn">add to cart</a>
+                <span class="price">$12.99</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/menu-5.jpg" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>delicious food</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
+                <a href="#" class="btn">add to cart</a>
+                <span class="price">$12.99</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/menu-6.jpg" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>delicious food</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
+                <a href="#" class="btn">add to cart</a>
+                <span class="price">$12.99</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/menu-7.jpg" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>delicious food</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
+                <a href="#" class="btn">add to cart</a>
+                <span class="price">$12.99</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/menu-8.jpg" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>delicious food</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
+                <a href="#" class="btn">add to cart</a>
+                <span class="price">$12.99</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/menu-9.jpg" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>delicious food</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
+                <a href="#" class="btn">add to cart</a>
+                <span class="price">$12.99</span>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- menu section ends -->
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>locations</h3>
+            <a href="#">Ho Chi Minh</a>
+            <a href="#">Ha Noi</a>
+            <a href="#">Hai Phong</a>
+            <a href="#">Da Nang</a>
+            <a href="#">Nha Trang</a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#">home</a>
+            <a href="#">about</a>
+            <a href="#">menu</a>
+            <a href="#">order</a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="tel:+84346082073">+84 346082073</a>
+            <a href="tel:+84346082073">+84 231278621</a>
+            <a href="mailto:ducminh0573@gmail.com">ducminh0573@gmail.com</a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="https://www.facebook.com/minggmine">facebook</a>
+            <a href="https://twitter.com/cMinhL05301397">twitter</a>
+            <a href="https://www.instagram.com/minhduc3030/">instagram</a>
+        </div>
+
+    </div>
+
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
 <script src="js/script.js"></script>
-<!-- begin olark code -->
-<script data-cfasync="false" type='text/javascript'>/*<![CDATA[*/window.olark||(function(c){var f=window,d=document,l=f.location.protocol=="https:"?"https:":"http:",z=c.name,r="load";var nt=function(){
-f[z]=function(){
-(a.s=a.s||[]).push(arguments)};var a=f[z]._={
-},q=c.methods.length;while(q--){(function(n){f[z][n]=function(){
-f[z]("call",n,arguments)}})(c.methods[q])}a.l=c.loader;a.i=nt;a.p={
-0:+new Date};a.P=function(u){
-a.p[u]=new Date-a.p[0]};function s(){
-a.P(r);f[z](r)}f.addEventListener?f.addEventListener(r,s,false):f.attachEvent("on"+r,s);var ld=function(){function p(hd){
-hd="head";return["<",hd,"></",hd,"><",i,' onl' + 'oad="var d=',g,";d.getElementsByTagName('head')[0].",j,"(d.",h,"('script')).",k,"='",l,"//",a.l,"'",'"',"></",i,">"].join("")}var i="body",m=d[i];if(!m){
-return setTimeout(ld,100)}a.P(1);var j="appendChild",h="createElement",k="src",n=d[h]("div"),v=n[j](d[h](z)),b=d[h]("iframe"),g="document",e="domain",o;n.style.display="none";m.insertBefore(n,m.firstChild).id=z;b.frameBorder="0";b.id=z+"-loader";if(/MSIE[ ]+6/.test(navigator.userAgent)){
-b.src="javascript:false"}b.allowTransparency="true";v[j](b);try{
-b.contentWindow[g].open()}catch(w){
-c[e]=d[e];o="javascript:var d="+g+".open();d.domain='"+d.domain+"';";b[k]=o+"void(0);"}try{
-var t=b.contentWindow[g];t.write(p());t.close()}catch(x){
-b[k]=o+'d.write("'+p().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};ld()};nt()})({
-loader: "static.olark.com/jsclient/loader0.js",name:"olark",methods:["configure","extend","declare","identify"]});
-/* custom configuration goes here (www.olark.com/documentation) */
-olark.identify('7830-582-10-3714');/*]]>*/</script><noscript><a href="https://www.olark.com/site/7830-582-10-3714/contact" title="Contact us" target="_blank">Questions? Feedback?</a> powered by <a href="http://www.olark.com?welcome" title="Olark live chat software">Olark live chat software</a></noscript>
-<!-- end olark code -->
 
 </body>
 </html>
