@@ -1,12 +1,6 @@
-<<<<<<< HEAD
 # AppBanDoAnTrua
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.6.
-=======
-# Project
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.0.
->>>>>>> 6a1ef365f3b594669236503d4571b44f4cbf86b8
 
 ## Development server
 

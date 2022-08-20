@@ -25,11 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-<<<<<<< HEAD
       dir: require('path').join(__dirname, './coverage/app-ban-do-an-trua'),
-=======
-      dir: require('path').join(__dirname, './coverage/project'),
->>>>>>> 6a1ef365f3b594669236503d4571b44f4cbf86b8
       subdir: '.',
       reporters: [
         { type: 'html' },
