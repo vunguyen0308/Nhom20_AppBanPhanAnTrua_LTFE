@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "app-ban-do-an-trua",
+=======
+  "name": "project",
+>>>>>>> 6a1ef365f3b594669236503d4571b44f4cbf86b8
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -18,14 +22,22 @@
     "@angular/platform-browser": "^14.0.0",
     "@angular/platform-browser-dynamic": "^14.0.0",
     "@angular/router": "^14.0.0",
+<<<<<<< HEAD
     "ngx-owl-carousel-o": "^14.0.1",
+=======
+>>>>>>> 6a1ef365f3b594669236503d4571b44f4cbf86b8
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
+<<<<<<< HEAD
     "@angular-devkit/build-angular": "^14.0.6",
     "@angular/cli": "~14.0.6",
+=======
+    "@angular-devkit/build-angular": "^14.0.0",
+    "@angular/cli": "~14.0.0",
+>>>>>>> 6a1ef365f3b594669236503d4571b44f4cbf86b8
     "@angular/compiler-cli": "^14.0.0",
     "@types/jasmine": "~4.0.0",
     "jasmine-core": "~4.1.0",

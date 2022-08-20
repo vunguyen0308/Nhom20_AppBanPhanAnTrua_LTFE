@@ -1,0 +1,138 @@
+<h1>Header</h1>
+
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <a class="navbar-brand" href="#">Title</a>
+    <ul class="nav navbar-nav">
+      <li class="active">
+        <a routerLink="/">Login ne</a>
+      </li>
+      <li>
+        <a routerLink="/register">Register</a>
+      </li>
+      <li>
+        <a routerLink="/about">About</a>
+      </li>
+      <li>
+        <a routerLink="/notfound404">Deo co gi ne</a>
+      </li>
+      <li>
+        <a routerLink="/contact">Contact</a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+
+<header class="page-header">
+  <!-- RD Navbar -->
+  <div class="rd-navbar-wrap">
+    <nav class="rd-navbar" data-rd-navbar-lg="rd-navbar-static">
+      <div class="rd-navbar-inner">
+        <!-- RD Navbar Panel -->
+        <div class="rd-navbar-panel">
+          <!-- RD Navbar Toggle -->
+          <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar"><span></span></button>
+          <!-- END RD Navbar Toggle -->
+          <!-- RD Navbar Brand -->
+          <div class="rd-navbar-brand">
+            <a href="index.html">
+              <span class="brand-name text-white text-bold">Ẩm thực <span>Ship</span></span>
+              <span class="brand-slogan text-thin">Món quà ngon</span>
+            </a>
+          </div>
+          <!-- END RD Navbar Brand -->
+        </div>
+        <!-- END RD Navbar Panel -->
+        <div class="rd-navbar-nav-wrap">
+          <!-- RD Navbar Search -->
+          <div class="rd-navbar-search">
+            <form class="rd-navbar-search-form" action="" method="GET">
+              <label class="rd-navbar-search-form-input">
+                <input type="text" name="s" placeholder="Search.." autocomplete="off"/>
+              </label>
+              <button class="rd-navbar-search-form-submit" type="submit"></button>
+            </form>
+            <span class="rd-navbar-live-search-results"></span>
+            <button class="rd-navbar-search-toggle" data-rd-navbar-toggle=".rd-navbar-search"></button>
+          </div>
+          <!-- END RD Navbar Search -->
+          <div class="login1">
+            <button data-toggle=".rd-navbar-info" class="active-toggle">
+              <span class="fa fa-user"></span>
+            </button>
+            <div class="rd-navbar-info">
+              <h2>
+                Đăng nhập:
+              </h2>
+              <!-- form -->
+              <form>
+                <fieldset>
+                  <input type="text"
+                         name="email"
+                         placeholder="Email address">
+                  <input type="password" class="form-control" placeholder="Password">
+                  <a href="#">Quên mật khẩu?</a>
+                  <div class="mfControls ">
+                    <button class="btn btn-sm btn-primary" >Đăng nhập</button>
+                  </div>
+                  <a href="#" class="text-uppercase text-bold">hoặc đăng ký</a>
+                </fieldset>
+              </form>
+              <!-- END form -->
+            </div>
+          </div>
+          <ul class="rd-navbar-nav">
+            <li class="active">
+              <a href="home.html">Trang chủ</a>
+            </li>
+            <li>
+              <a href="about.html">Chúng tôi</a>
+              <!-- RD Navbar Dropdown -->
+              <ul class="rd-navbar-dropdown">
+                <li>
+                  <a href="#">Giá</a>
+                </li>
+                <li>
+                  <a href="#">Hỏi đáp</a>
+                  <ul class="rd-navbar-dropdown">
+                    <li>
+                      <a href='#'>Lịch sử</a>
+                    </li>
+                    <li>
+                      <a href='#'>Điều khoản</a>
+                    </li>
+                    <li>
+                      <a href='#'>Diễn đàn</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Nhân viên</a>
+                </li>
+              </ul>
+              <!-- END RD Navbar Dropdown -->
+            </li>
+            <li>
+              <a href="menu.html">Thực đơn</a>
+            </li>
+            <li>
+              <a href="gallery.html">Ảnh</a>
+            </li>
+            <li>
+              <a href="contact.html">Liên hệ</a>
+            </li>
+          </ul>
+          <!-- END RD Navbar Nav -->
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- END RD Navbar -->
+</header>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+
+<h1>Footer</h1>

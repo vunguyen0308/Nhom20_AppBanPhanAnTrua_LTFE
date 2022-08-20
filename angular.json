@@ -3,9 +3,19 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+<<<<<<< HEAD
     "AppBanDoAnTrua": {
       "projectType": "application",
       "schematics": {},
+=======
+    "project": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      },
+>>>>>>> 6a1ef365f3b594669236503d4571b44f4cbf86b8
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -13,7 +23,11 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+<<<<<<< HEAD
             "outputPath": "dist/app-ban-do-an-trua",
+=======
+            "outputPath": "dist/project",
+>>>>>>> 6a1ef365f3b594669236503d4571b44f4cbf86b8
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -23,10 +37,15 @@
               "src/assets"
             ],
             "styles": [
+<<<<<<< HEAD
               "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.carousel.min.css",
               "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.theme.default.min.css",
               "src/styles.css"
 
+=======
+              "src/styles.css",
+              "src/assets/css/style.css"
+>>>>>>> 6a1ef365f3b594669236503d4571b44f4cbf86b8
             ],
             "scripts": [
               "src/assets/js/script.js"
@@ -69,10 +88,17 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
+<<<<<<< HEAD
               "browserTarget": "AppBanDoAnTrua:build:production"
             },
             "development": {
               "browserTarget": "AppBanDoAnTrua:build:development"
+=======
+              "browserTarget": "project:build:production"
+            },
+            "development": {
+              "browserTarget": "project:build:development"
+>>>>>>> 6a1ef365f3b594669236503d4571b44f4cbf86b8
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +106,11 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
+<<<<<<< HEAD
             "browserTarget": "AppBanDoAnTrua:build"
+=======
+            "browserTarget": "project:build"
+>>>>>>> 6a1ef365f3b594669236503d4571b44f4cbf86b8
           }
         },
         "test": {
