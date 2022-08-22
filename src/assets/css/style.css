@@ -174,6 +174,10 @@ header .icons #menu-bars{
     font-size: 5rem;
 }
 
+.home{
+  background-color: #f1f1f1;
+}
+
 .home .home-slider .slide{
     display: flex;
     align-items: center;
@@ -357,9 +361,9 @@ header .icons #menu-bars{
 }
 
 .menu .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap:1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
 }
 
 .menu .box-container .box{
@@ -367,6 +371,9 @@ header .icons #menu-bars{
     border:.1rem solid rgba(0,0,0,.2);
     border-radius: .5rem;
     box-shadow: var(--box-shadow);
+    margin: 6px;
+    height: 435px;
+    width: 24%;
 }
 
 .menu .box-container .box .image{
@@ -397,9 +404,20 @@ header .icons #menu-bars{
     color:var(--black);
 }
 
+.menu .box-container .box .image .fa-heart.favorite{
+  background-color: var(--green);
+  color:#fff;
+}
+
 .menu .box-container .box .image .fa-heart:hover{
     background-color: var(--green);
     color:#fff;
+}
+
+.menu .clock-time{
+  font-size: 1.5em;
+  margin-bottom: 8px;
+  color: var(--light-color);
 }
 
 .menu .box-container .box .content{
@@ -430,8 +448,152 @@ header .icons #menu-bars{
 
 .menu .box-container .box .content .price{
     color:var(--green);
-    margin-left: 1rem;
     font-size: 2.5rem;
+}
+
+.menu .search{
+  display: flex;
+  justify-content: end;
+}
+
+.menu .search input{
+  border-radius: 10rem 0 0 10rem;
+  border: none;
+  height: 4rem;
+  width: 25rem;
+  background-color: #f1f1f1;
+  padding: 1.2rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  outline: none;
+}
+
+.menu .search button{
+  margin-top: 0!important;
+  color: grey;
+  height: 4rem;
+  width: 6rem;
+  font-size: 1.8rem;
+  border-radius: 0 10rem 10rem 0;
+  border: none;
+  outline: none;
+  background-color: var(--green);
+  color: #fff;
+  opacity: .8;
+}
+
+.menu .search button:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+
+.menu .tag{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.menu .tag button{
+  margin: .2rem .15rem;
+  padding: 1.2rem 1.5rem;
+  width: auto;
+}
+
+.menu .listFood-null{
+  display: flex;
+  justify-content: center;
+  margin: 4rem 0;
+}
+
+.menu .listFood-null span{
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: var(--black);
+}
+
+.container.detail-page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 3rem;
+}
+
+.detail-page > *{
+  min-width: 25rem;
+  max-width: 40rem;
+}
+
+.detail-page img{
+  border-radius: 3rem;
+  flex: 1 0;
+  object-fit: cover;
+  height: 35rem;
+  margin: 1rem;
+}
+
+.detail-page .details{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0;
+  border-radius: 3rem;
+  padding: 2rem;
+  color: black;
+  margin-left: 1rem;
+}
+
+.detail-page .header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.detail-page .name{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.detail-page .tag-f{
+  margin: 1rem 0;
+}
+
+.detail-page .tag-f > span{
+  padding: .5rem;
+  font-size: 1.2rem;
+  margin: .5rem .5rem .5rem 0;
+  border-radius: 2rem;
+  background-color: aliceblue;
+}
+
+.detail-page .description{
+  font-size: 1.8rem;
+  margin: .5rem 0;
+  text-align: start;
+}
+
+.detail-page .cook-time{
+  margin-top: 1rem;
+}
+
+.detail-page .cook-time span{
+  padding: .6rem 2rem .6rem 0;
+  border-radius: 10rem;
+  font-size: 1.3rem;
+}
+
+.detail-page .price{
+  font-size: 1.8rem;
+  margin: 2rem 2rem 2rem 0;
+  color: var(--green);
+}
+
+.detail-page .price::before{
+  content: 'Giá: ';
+  color: darkgrey;
+}
+
+.detail-page button{
+  color: white;
 }
 
 .review .slide{
@@ -999,6 +1161,42 @@ img {
     display: inline;
     padding-right: 1em;
 }
+
+.cart .food-name{
+  line-height: 80px;
+  font-size: 1.8rem;
+  color: var(--black);
+  font-weight: bold;
+}
+
+.cart .cart-null{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.5rem;
+  font-weight: 100;
+  height: 15rem;
+  margin: 3.2rem 0;
+}
+
+.cart .cart-null .btn{
+  width: auto;
+  padding: 1.2rem 1.4rem;
+  background-color: var(--green);
+  border-radius: 50px;
+  opacity: 0.8;
+}
+
+.cart .cart-null .btn:hover{
+  opacity: 1;
+}
+.cart .cart-null span{
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1.8rem;
+}
+
 .special {
     display: block;
     font-family: 'Montserrat', sans-serif;

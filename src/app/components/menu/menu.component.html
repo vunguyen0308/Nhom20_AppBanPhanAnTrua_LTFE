@@ -1,3 +1,4 @@
+<app-header></app-header>
 <app-slider></app-slider>
 <!-- menu section starts  -->
 
@@ -6,185 +7,48 @@
   <h3 class="sub-heading"> our menu </h3>
   <h1 class="heading"> today's speciality </h1>
 
-  <div class="box-container">
-
-    <div class="box">
-      <div class="image">
-        <img src="images/menu-1.jpg" alt="">
-        <a href="#" class="fas fa-heart"></a>
-      </div>
-      <div class="content">
-        <div class="stars">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star-half-alt"></i>
-        </div>
-        <h3>delicious food</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
-        <a href="#" class="btn">add to cart</a>
-        <span class="price">$12.99</span>
-      </div>
+  <form action="" method="post" [formGroup]="searchForm" (ngSubmit)="onSearch()" >
+    <div class="search">
+      <input type="text"  formControlName="name" placeholder="Tìm món ăn" name="" id="">
+      <button type="submit" class="fas fa-search"></button>
     </div>
+  </form>
+  <div class="tag">
+    <button *ngFor="let tag of listTag"
+            class="btn-tag"
+            (click)="onLoadFoodTag(tag.id)">
+      {{tag.name}}
+    </button>
+  </div>
 
-    <div class="box">
+  <div class="listFood-null" *ngIf="listFoods.length == 0">
+    <span>Không có kết quả nào cho "{{keySearch}}" Vui lòng kiểm tra lại từ khóa(Tên món ăn). </span>
+  </div>
+
+  <div class="box-container" *ngIf="listFoods.length > 0">
+
+    <div class="box" *ngFor="let f of listFoods">
       <div class="image">
-        <img src="images/menu-2.jpg" alt="">
-        <a href="#" class="fas fa-heart"></a>
+        <a routerLink="/details/{{f.id}}"><img src="{{f.img}}" alt=""></a>
+        <a href="#" class="fas fa-heart {{f.favorite ?'favorite':''}}"></a>
       </div>
       <div class="content">
-        <div class="stars">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star-half-alt"></i>
+        <star-rating
+          [value]="f.stars"
+          [totalstars]="5"
+          checkedcolor="green"
+          uncheckedcolor="black"
+          size="24px"
+          [readonly]="true">
+        </star-rating>
+        <h3>{{f.name}}</h3>
+        <p>{{f.des}}</p>
+        <div class="clock-time">
+          <span>🕒</span>
+          {{f.cookTime}}
         </div>
-        <h3>delicious food</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
-        <a href="#" class="btn">add to cart</a>
-        <span class="price">$12.99</span>
-      </div>
-    </div>
-
-    <div class="box">
-      <div class="image">
-        <img src="images/menu-3.jpg" alt="">
-        <a href="#" class="fas fa-heart"></a>
-      </div>
-      <div class="content">
-        <div class="stars">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star-half-alt"></i>
-        </div>
-        <h3>delicious food</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
-        <a href="#" class="btn">add to cart</a>
-        <span class="price">$12.99</span>
-      </div>
-    </div>
-
-    <div class="box">
-      <div class="image">
-        <img src="images/menu-4.jpg" alt="">
-        <a href="#" class="fas fa-heart"></a>
-      </div>
-      <div class="content">
-        <div class="stars">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star-half-alt"></i>
-        </div>
-        <h3>delicious food</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
-        <a href="#" class="btn">add to cart</a>
-        <span class="price">$12.99</span>
-      </div>
-    </div>
-
-    <div class="box">
-      <div class="image">
-        <img src="images/menu-5.jpg" alt="">
-        <a href="#" class="fas fa-heart"></a>
-      </div>
-      <div class="content">
-        <div class="stars">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star-half-alt"></i>
-        </div>
-        <h3>delicious food</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
-        <a href="#" class="btn">add to cart</a>
-        <span class="price">$12.99</span>
-      </div>
-    </div>
-
-    <div class="box">
-      <div class="image">
-        <img src="images/menu-6.jpg" alt="">
-        <a href="#" class="fas fa-heart"></a>
-      </div>
-      <div class="content">
-        <div class="stars">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star-half-alt"></i>
-        </div>
-        <h3>delicious food</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
-        <a href="#" class="btn">add to cart</a>
-        <span class="price">$12.99</span>
-      </div>
-    </div>
-
-    <div class="box">
-      <div class="image">
-        <img src="images/menu-7.jpg" alt="">
-        <a href="#" class="fas fa-heart"></a>
-      </div>
-      <div class="content">
-        <div class="stars">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star-half-alt"></i>
-        </div>
-        <h3>delicious food</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
-        <a href="#" class="btn">add to cart</a>
-        <span class="price">$12.99</span>
-      </div>
-    </div>
-
-    <div class="box">
-      <div class="image">
-        <img src="images/menu-8.jpg" alt="">
-        <a href="#" class="fas fa-heart"></a>
-      </div>
-      <div class="content">
-        <div class="stars">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star-half-alt"></i>
-        </div>
-        <h3>delicious food</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
-        <a href="#" class="btn">add to cart</a>
-        <span class="price">$12.99</span>
-      </div>
-    </div>
-
-    <div class="box">
-      <div class="image">
-        <img src="images/menu-9.jpg" alt="">
-        <a href="#" class="fas fa-heart"></a>
-      </div>
-      <div class="content">
-        <div class="stars">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star-half-alt"></i>
-        </div>
-        <h3>delicious food</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
-        <a href="#" class="btn">add to cart</a>
-        <span class="price">$12.99</span>
+        <span class="price">{{f.sellPrice|currency:"VND":"symbol"}}</span>
+        <button style="width: auto" (click)="addToCart(f)">Thêm vào giỏ</button>
       </div>
     </div>
 
@@ -193,3 +57,4 @@
 </section>
 
 <!-- menu section ends -->
+<app-footer></app-footer>

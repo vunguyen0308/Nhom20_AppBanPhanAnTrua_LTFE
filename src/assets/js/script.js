@@ -14,15 +14,6 @@ window.onload = function () {
 
   }
 
-  document.querySelector('#search-icon').onclick = () =>{
-    document.querySelector('#search-form').classList.toggle('active');
-  }
-
-  document.querySelector('#close').onclick = () =>{
-    document.querySelector('#search-form').classList.remove('active');
-  }
-
-
   function loader(){
     document.querySelector('.loader-container').classList.add('fade-out');
   }
@@ -33,13 +24,6 @@ window.onload = function () {
 
   window.onload = fadeOut;
 
-
-// Remove Items From Cart
-  $('a.remove').click(function(){
-    event.preventDefault();
-    $( this ).parent().parent().parent().hide( 400 );
-
-  })
 
 // Just for testing, show all items
   $('a.btn.continue').click(function(){

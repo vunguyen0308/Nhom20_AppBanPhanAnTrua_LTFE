@@ -36,27 +36,6 @@ export class SliderComponent implements OnInit {
     nav: true
   }
 
-  imagesList = [
-    "assets/images/home-img-1.png",
-    "assets/images/home-img-2.png",
-    "assets/images/home-img-3.png"
-  ];
-
-  namesList = [
-    "spicy noodles",
-    "fried chicken",
-    "hot pizza"
-  ];
-
-  descriptionsList = [
-    "Đây là phở",
-    "Đây là gà",
-    "Đây là pizza"
-  ];
-
-
-  title = "our special dish"
-
   constructor(private sl: SliderService) { }
 
   ngOnInit(): void {
