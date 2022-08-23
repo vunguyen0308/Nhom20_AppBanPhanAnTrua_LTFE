@@ -15,7 +15,6 @@ import { CartComponent } from './components/cart/cart.component';
 import { OrderComponent } from './components/order/order.component';
 import { ErrorComponent } from './components/error/error.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
-import { ModalProductDetailComponent } from './components/modal-product-detail/modal-product-detail.component';
 import { RatingModule} from "ng-starrating";
 import {ReactiveFormsModule} from "@angular/forms";
 import { DetailsComponent } from './components/details/details.component';
@@ -24,6 +23,13 @@ import { SignupComponent } from './components/signup/signup.component';
 import { ProductComponent } from './admin/product/product.component';
 import { TagComponent } from './admin/tag/tag.component';
 import { UserComponent } from './admin/user/user.component';
+import { TopbarComponent } from './admin/topbar/topbar.component';
+import { SidebarComponent } from './admin/sidebar/sidebar.component';
+import { ProductAddComponent } from './admin/product/product-add/product-add.component';
+import { ProductEditComponent } from './admin/product/product-edit/product-edit.component';
+import { TagAddComponent } from './admin/tag/tag-add/tag-add.component';
+import { TagEditComponent } from './admin/tag/tag-edit/tag-edit.component';
+import { UserAddComponent } from './admin/user/user-add/user-add.component';
 
 @NgModule({
   declarations: [
@@ -38,13 +44,19 @@ import { UserComponent } from './admin/user/user.component';
     CartComponent,
     OrderComponent,
     ErrorComponent,
-    ModalProductDetailComponent,
     DetailsComponent,
     LoginComponent,
     SignupComponent,
     ProductComponent,
     TagComponent,
-    UserComponent
+    UserComponent,
+    TopbarComponent,
+    SidebarComponent,
+    ProductAddComponent,
+    ProductEditComponent,
+    TagAddComponent,
+    TagEditComponent,
+    UserAddComponent
   ],
   imports: [
     BrowserModule,

@@ -372,7 +372,6 @@ header .icons #menu-bars{
     border-radius: .5rem;
     box-shadow: var(--box-shadow);
     margin: 6px;
-    height: 435px;
     width: 24%;
 }
 

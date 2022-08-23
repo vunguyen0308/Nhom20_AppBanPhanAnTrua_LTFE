@@ -4,6 +4,7 @@ import {ActivatedRoute, Router} from "@angular/router";
 import {Product} from "../../model/product";
 import {TagService} from "../../services/tag.service";
 import {CartService} from "../../services/cart.service";
+import {Tag} from "../../model/tag";
 
 @Component({
   selector: 'app-details',
@@ -11,7 +12,6 @@ import {CartService} from "../../services/cart.service";
 })
 export class DetailsComponent implements OnInit {
   id: number = 0;
-  tagName: string = '';
   food: Product = new Product(0,'',0,'',false,'','','',0,0,0);
 
   constructor(private aRoute:ActivatedRoute,private productService:ProductService, private tagService:TagService, private cartService:CartService, private router: Router ) { }
@@ -21,9 +21,7 @@ export class DetailsComponent implements OnInit {
     this.productService.getProductById(this.id).subscribe(data =>{
       this.food = data;
     })
-    this.tagService.getTagById(this.id).subscribe(data =>{
-      this.tagName = data.name;
-    })
+
   }
 
   addToCart(){

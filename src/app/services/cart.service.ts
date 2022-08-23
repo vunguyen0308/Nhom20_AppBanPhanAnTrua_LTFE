@@ -40,6 +40,10 @@ export class CartService {
     return this.cart;
   }
 
+  getTotal(): number{
+    return this.cart.totalPrice;
+  }
+
   getCartObservable(): Observable<Cart>{
     return this.cartSubject.asObservable();
   }

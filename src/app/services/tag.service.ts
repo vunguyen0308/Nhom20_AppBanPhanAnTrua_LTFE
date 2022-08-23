@@ -12,10 +12,24 @@ export class TagService {
   constructor(private http: HttpClient) { }
 
   getAllTags(): Observable<Array<Tag>>{
-    return this.http.get<Array<Tag>>(_api );
+    return this.http.get<Array<Tag>>(_api);
   }
 
-  getTagById(id: number): Observable<Tag>{
+  getTagById(id: any): Observable<Tag>{
     return this.http.get<Tag>(_api+'/' + id);
+  }
+
+  addTag(data: any): Observable<any>{
+    let url = _api
+    return this.http.post<any>(url,data);
+  }
+
+  updateTag(id:number,data: any): Observable<any>{
+    let url = _api
+    return this.http.put<any>(url + '/' + id,data);
+  }
+
+  removeTag(id: number){
+    return this.http.delete(_api + '/' +id);
   }
 }

@@ -16,20 +16,20 @@
   <div class="tag">
     <button *ngFor="let tag of listTag"
             class="btn-tag"
-            (click)="onLoadFoodTag(tag.id)">
-      {{tag.name}}
+            (click)="onLoadFoodTag(tag.tagId)">
+      {{tag.tagName}}
     </button>
   </div>
 
   <div class="listFood-null" *ngIf="listFoods.length == 0">
-    <span>Không có kết quả nào cho "{{keySearch}}" Vui lòng kiểm tra lại từ khóa(Tên món ăn). </span>
+    <span>Không có món ăn nào thỏa điều kiện!</span>
   </div>
 
   <div class="box-container" *ngIf="listFoods.length > 0">
 
     <div class="box" *ngFor="let f of listFoods">
       <div class="image">
-        <a routerLink="/details/{{f.id}}"><img src="{{f.img}}" alt=""></a>
+        <a routerLink="/details/{{f.id}}"><img [src]="f.img" [alt]="f.name"></a>
         <a href="#" class="fas fa-heart {{f.favorite ?'favorite':''}}"></a>
       </div>
       <div class="content">

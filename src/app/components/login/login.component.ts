@@ -15,6 +15,7 @@ import {Account} from "../../model/account";
 export class LoginComponent implements OnInit {
 
   public loginForm!: FormGroup
+  isSubmitted = false;
   constructor(private formBuilder:FormBuilder, private accountService:AccountService, private router:Router) { }
 
   ngOnInit(): void {
@@ -24,15 +25,25 @@ export class LoginComponent implements OnInit {
     })
   }
 
+
   login(){
     this.accountService.login().subscribe(data =>{
       const user = data.find((a:Account)=>{
         return a.email === this.loginForm.value.email && a.password === this.loginForm.value.password;
       } );
+
       if(user){
-        alert("Đăng nhập thành công");
         this.loginForm.reset();
-        this.router.navigate(['home'])
+        localStorage.setItem('token','qweqwrqsfasasetasfasesafgasrseastfsfasasewgasd.123asferascas34asfrhinfamfihgbhu421423rasfer3')
+        localStorage.setItem("userId",user.id);
+        if(user.role == 0){
+          this.router.navigate(['/admin/food'])
+          localStorage.setItem('userType','admin');
+        }else{
+          this.router.navigate(['home'])
+          localStorage.setItem('userType','customer');
+
+        }
       }else{
         alert("Email hoặc mật khẩu không chính xác")
       }

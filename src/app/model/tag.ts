@@ -1,12 +1,13 @@
 export class Tag{
-  private _id: number;
-  private _name:string;
+  private _id:number;
+  private _tagId: number;
+  private _tagName:string;
 
-  constructor(id: number, name: string) {
+  constructor(id: number, tagId: number, tagName: string) {
     this._id = id;
-    this._name = name;
+    this._tagId = tagId;
+    this._tagName = tagName;
   }
-
 
   get id(): number {
     return this._id;
@@ -16,11 +17,21 @@ export class Tag{
     this._id = value;
   }
 
-  get name(): string {
-    return this._name;
+  get tagId(): number {
+    return this._tagId;
   }
 
-  set name(value: string) {
-    this._name = value;
+  set tagId(value: number) {
+    this._tagId = value;
   }
+
+  get tagName(): string {
+    return this._tagName;
+  }
+
+  set tagName(value: string) {
+    this._tagName = value;
+  }
+
+
 }

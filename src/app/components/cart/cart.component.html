@@ -2,8 +2,8 @@
 <section class="cart">
   <div class="wrap cf">
     <div class="heading cf">
-      <h1>My Cart</h1>
-      <a routerLink="/menu" class="continue">Continue Shopping</a>
+      <h1 >My Cart</h1>
+      <a routerLink="/menu" class="continue">Tiếp tục xem món</a>
     </div>
     <div class="cart-null" *ngIf="cart.items.length == 0">
       <span>Giỏ hàng của bạn đang trống</span>
@@ -49,14 +49,11 @@
           <li class="totalRow"><span class="label">Shipping</span><span class="value">0</span></li>
           <li class="totalRow"><span class="label">Tax</span><span class="value">0</span></li>
           <li class="totalRow final"><span class="label">Total</span><span class="value">{{cart.totalPrice | currency:"VND":"symbol"}}</span></li>
-          <li class="totalRow"><a routerLink="/checkout" class="btn continue btn-checkout">Checkout</a></li>
+          <li class="totalRow"><a routerLink="/order" class="btn continue btn-checkout">Checkout</a></li>
         </ul>
       </div>
 
     </div>
-
-
-
 
 
   </div>

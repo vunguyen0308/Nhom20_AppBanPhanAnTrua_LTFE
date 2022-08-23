@@ -24,7 +24,11 @@ export class CartComponent implements OnInit {
   }
 
   changeQuantity(cartItem:CartItem,quantityInString: string){
-    const quantity = parseInt(quantityInString);
+    let quantity = parseInt(quantityInString);
+    if(isNaN(quantity) || quantity < 1){
+      quantity = 1
+    }
+
     this.cartService.changeQuantity(cartItem.food.id,quantity);
     this.setCart();
   }

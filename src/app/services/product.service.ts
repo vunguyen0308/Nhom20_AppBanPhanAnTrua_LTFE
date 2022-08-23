@@ -27,9 +27,29 @@ export class ProductService {
     return this.http.get<Array<Product>>(url);
   }
 
-  getProductById(id: number): Observable<Product>{
+  getProductById(id: any): Observable<Product>{
     let url = _api
     return this.http.get<Product>(url + '/' +id);
+  }
+
+  addProduct(data: any): Observable<any>{
+    let url = _api
+    return this.http.post<any>(url,data);
+  }
+
+  updateProduct(id:number,data: any): Observable<any>{
+    let url = _api
+    return this.http.put<any>(url + '/' + id,data);
+  }
+
+  removeProduct(id: number){
+    let url = _api
+    return this.http.delete<any>(url + '/' + id);
+  }
+
+  getTopNumProductIDDESC(num:number): Observable<Array<Product>>{
+    let url = _api
+    return this.http.get<Array<Product>>(url + '?_limit='+num+'&_sort=id&_order=desc')
   }
 
 }

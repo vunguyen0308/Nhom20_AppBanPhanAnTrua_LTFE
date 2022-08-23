@@ -3,106 +3,28 @@
 <app-slider></app-slider>
 <section class="dishes" id="dishes">
 
-  <h3 class="sub-heading"> our dishes </h3>
-  <h1 class="heading"> popular dishes </h1>
+  <h3 class="sub-heading"> Món ăn cho bạn </h3>
+  <h1 class="heading"> Món ăn phổ biến </h1>
 
   <div class="box-container">
 
-    <div class="box">
-      <a href="#" class="fas fa-heart"></a>
-      <a href="#" class="fas fa-eye"></a>
-      <img src="assets/images/dish-1.png" alt="">
-      <h3>tasty food</h3>
-      <div class="stars">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star-half-alt"></i>
-      </div>
-      <span>$15.99</span>
-      <a href="#" class="btn">add to cart</a>
+    <div class="box" *ngFor="let p of topProduct">
+      <a  class="fas fa-heart"></a>
+      <a routerLink="/details/{{p.id}}" class="fas fa-eye"></a>
+      <img [src]="p.img" [alt]="p.name">
+      <h3>{{p.name}}</h3>
+      <star-rating
+        [value]="p.stars"
+        [totalstars]="5"
+        checkedcolor="green"
+        uncheckedcolor="black"
+        size="24px"
+        [readonly]="true">
+      </star-rating>
+      <span>{{p.sellPrice | currency:"VND":"symbol"}}</span>
+      <a (click)="addToCart(p)" class="btn">add to cart</a>
     </div>
 
-    <div class="box">
-      <a href="#" class="fas fa-heart"></a>
-      <a href="#" class="fas fa-eye"></a>
-      <img src="assets/images/dish-2.png" alt="">
-      <h3>tasty food</h3>
-      <div class="stars">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star-half-alt"></i>
-      </div>
-      <span>$15.99</span>
-      <a href="#" class="btn">add to cart</a>
-    </div>
-
-    <div class="box">
-      <a href="#" class="fas fa-heart"></a>
-      <a href="#" class="fas fa-eye"></a>
-      <img src="assets/images/dish-3.png" alt="">
-      <h3>tasty food</h3>
-      <div class="stars">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star-half-alt"></i>
-      </div>
-      <span>$15.99</span>
-      <a href="#" class="btn">add to cart</a>
-    </div>
-
-    <div class="box">
-      <a href="#" class="fas fa-heart"></a>
-      <a href="#" class="fas fa-eye"></a>
-      <img src="assets/images/dish-4.png" alt="">
-      <h3>tasty food</h3>
-      <div class="stars">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star-half-alt"></i>
-      </div>
-      <span>$15.99</span>
-      <a href="#" class="btn">add to cart</a>
-    </div>
-
-    <div class="box">
-      <a href="#" class="fas fa-heart"></a>
-      <a href="#" class="fas fa-eye"></a>
-      <img src="assets/images/dish-5.png" alt="">
-      <h3>tasty food</h3>
-      <div class="stars">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star-half-alt"></i>
-      </div>
-      <span>$15.99</span>
-      <a href="#" class="btn">add to cart</a>
-    </div>
-
-    <div class="box">
-      <a href="#" class="fas fa-heart"></a>
-      <a href="#" class="fas fa-eye"></a>
-      <img src="assets/images/dish-6.png" alt="">
-      <h3>tasty food</h3>
-      <div class="stars">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star-half-alt"></i>
-      </div>
-      <span>$15.99</span>
-      <a href="#" class="btn">add to cart</a>
-    </div>
 
   </div>
 
